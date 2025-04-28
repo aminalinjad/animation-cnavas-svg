@@ -5,11 +5,12 @@ import test2 from "./components/test2.vue";
 </script>
 
 <template>
-<!--  <test1/>-->
-  <Suspense>
-    <test2/>
-  </Suspense>
 
+<!-- <Suspense>
+    <test2/>
+  </Suspense> -->
+  
+<test1/>
 
   <div style="height: 8000px"></div>
 </template>
