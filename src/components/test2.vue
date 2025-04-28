@@ -1,5 +1,5 @@
 <script setup>
-import {TresCanvas, useRenderLoop} from '@tresjs/core'
+import {TresCanvas, useRenderLoop, vLightHelper } from '@tresjs/core'
 import {OrbitControls} from '@tresjs/cientos'
 import {onMounted, ref} from 'vue'
 import {useAnimations, useGLTF} from '@tresjs/cientos'
@@ -53,8 +53,21 @@ onLoop(() => {
     <TresCanvas clear-color="#111111" window-size>
       <TresPerspectiveCamera :position="[0, 1, 3]" :look-at="[0, 0, 0]"/>
 <!--      <OrbitControls/>-->
-      <TresAmbientLight :intensity="1"/>
-      <TresDirectionalLight :position="[2, 2, 2]" :intensity="1"/>
+<!--      <TresDirectionalLight-->
+<!--          cast-shadow-->
+<!--          v-light-helper-->
+<!--          :position="[0, 2, 0]"-->
+<!--          :intensity="1"-->
+<!--      />-->
+<!--      <TresPointLight-->
+<!--          v-light-helper-->
+<!--      />-->
+<!--      <TresSpotLight-->
+<!--          v-light-helper-->
+<!--      />-->
+<!--      <TresHemisphereLight-->
+<!--          v-light-helper-->
+<!--      />-->
 
       <!-- مکعب -->
       <primitive :scale="[0.5, 0.5, 0.5]" :rotation="[-0.2, rotation, 1]" :position="[0.3, translateY,0.5]" :object="model"/>
