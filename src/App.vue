@@ -1,6 +1,8 @@
 <script setup>
 import test1 from "./components/test1.vue";
 import test2 from "./components/test2.vue";
+import scrollAnimation from "./components/scrollAnimation.vue";
+
 
 </script>
 
@@ -9,10 +11,13 @@ import test2 from "./components/test2.vue";
 <!-- <Suspense>
     <test2/>
   </Suspense> -->
-  
-<test1/>
 
-  <div style="height: 8000px"></div>
+<!--<test1/>-->
+
+<!--  <div style="height: 8000px"></div>-->
+
+
+  <scroll-animation/>
 </template>
 
 <style scoped>
